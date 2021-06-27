@@ -6,7 +6,7 @@ dist: bionic
 addons:
   sonarcloud:
     organization: "anastasiadragalina"
-    token: SONAR_TOKEN
+    token: $SONAR_TOKEN
 
 script:
   -mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=AnastasiaDragalina_UIPR_Practice-6
